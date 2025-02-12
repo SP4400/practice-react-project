@@ -1,0 +1,12 @@
+name: metadata
+on:
+    issues:
+        types: [opened]
+
+jobs:
+    metadata:
+        runs-on: ubuntu-latest
+        steps:
+            - name: output github context or metadata
+              run: echo "${{ toJson(github) }}"
+            
