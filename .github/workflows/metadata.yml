@@ -2,6 +2,11 @@ name: metadata
 on:
     issues:
         types: [opened]
+    workflow_dispatch:
+        inputs:
+            name:
+                description: 'Name'
+                required: true
 
 jobs:
     metadata:
