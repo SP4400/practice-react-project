@@ -8,13 +8,13 @@ jobs:
           - name: get code
             uses: actions/checkout@v3
           - name: install dependencies
-            uses: npm ci
+            run: npm ci
           - name: lint code
-            uses: npm run lint
+            run: npm run lint
           - name: test code
-            uses: npm test
+            run: npm test
           - name: build code 
-            uses: npm run build
+            run: npm run build
 
 
 
